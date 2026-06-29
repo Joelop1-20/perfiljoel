@@ -1,0 +1,262 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#dff6ff,#ffffff,#ece6ff);
+
+    color:#333;
+
+}
+
+/* ENCABEZADO */
+
+header{
+
+    background:linear-gradient(90deg,#87CEFA,#B39DDB);
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+header h1{
+
+    color:white;
+
+    font-size:42px;
+
+    letter-spacing:3px;
+
+    margin-bottom:15px;
+
+}
+
+/* MENU */
+
+nav ul{
+
+    list-style:none;
+
+}
+
+nav ul li{
+
+    display:inline-block;
+
+    margin:10px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    background:white;
+
+    color:#5E35B1;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+nav ul li a:hover{
+
+    background:#7EC8E3;
+
+    color:white;
+
+    transform:scale(1.1);
+
+}
+
+/* PRINCIPAL */
+
+.principal{
+
+    text-align:center;
+
+    padding:50px;
+
+}
+
+/* FOTO */
+
+.foto{
+
+    width:240px;
+
+    height:240px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:8px solid white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    margin-bottom:25px;
+
+    transition:.5s;
+
+}
+
+.foto:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* TITULO */
+
+.principal h2{
+
+    color:#6A5ACD;
+
+    margin-bottom:20px;
+
+    font-size:34px;
+
+}
+
+.principal p{
+
+    width:70%;
+
+    margin:auto;
+
+    line-height:30px;
+
+    font-size:19px;
+
+}
+
+/* TARJETAS */
+
+.contenedor{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    padding:40px;
+
+}
+
+.tarjeta{
+
+    width:320px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.tarjeta:hover{
+
+    transform:translateY(-10px);
+
+    background:#eef9ff;
+
+}
+
+.tarjeta h2{
+
+    color:#6A5ACD;
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+}
+
+.tarjeta p{
+
+    margin-bottom:15px;
+
+    text-align:center;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    background:#6A5ACD;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.principal p{
+
+width:95%;
+
+}
+
+header h1{
+
+font-size:30px;
+
+}
+
+nav ul li{
+
+display:block;
+
+margin:15px;
+
+}
+
+.tarjeta{
+
+width:90%;
+
+}
+
+.foto{
+
+width:180px;
+
+height:180px;
+
+}
+
+}
