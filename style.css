@@ -176,9 +176,47 @@ nav ul li a:hover{
     box-shadow:0 10px 25px rgba(0,0,0,.15);
 
     transition:.4s;
+}
+#redes{
+
+    text-align: center; /* Centra el título H2 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio vertical entre cada red social */
+}
+#redes a {
+    text-decoration: none !important; /* ¡Con el signo '!' correcto! */
+    display: flex;
+    align-items: center;       /* Alinea la imagen y el texto en la misma línea */
+    flex-direction: column;   /* <--- Esto hace que el texto se baje */
+    justify-content: center;
+    margin-bottom: 15px;       /* Espacio entre cada red social */
+    
+}
+span {
+   display: flex;
+    align-items: center;       /* Centra verticalmente el texto con la imagen */
+    text-decoration: none;     /* Quita la línea de abajo del enlace */
+    color: #e1306c;            /* Tu color para el texto (cámbialo si gustas) */
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none important; /* Asegura que no haya subrayado */
 
 }
+.icono-red{
 
+    width: 40px;
+
+    height: 40px;
+
+    vertical-align: middle;
+
+    margin-right: 10px;
+    
+
+}
 .tarjeta:hover{
 
     transform:translateY(-10px);
